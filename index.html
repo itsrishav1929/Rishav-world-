@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rishav Raj | Civil Engineering Portfolio</title>
+<meta name="description" content="Rishav Raj — Diploma in Civil Engineering student at Government Polytechnic Munger.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#071018;--bg2:#0b1822;--text:#eef7f5;--muted:#9aadaa;--line:rgba(255,255,255,.09);--accent:#ffb84a;--accent2:#63d6c6;--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{min-height:100vh;color:var(--text);font-family:Inter,system-ui,sans-serif;background:radial-gradient(circle at 78% 20%,rgba(99,214,198,.11),transparent 28%),radial-gradient(circle at 15% 80%,rgba(255,184,74,.08),transparent 25%),linear-gradient(135deg,var(--bg),var(--bg2));overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(rgba(99,214,198,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(99,214,198,.08) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent 85%)}
+a{color:inherit;text-decoration:none}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{position:relative;z-index:10;border-bottom:1px solid var(--line);backdrop-filter:blur(14px);background:rgba(7,16,24,.62)}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between}.logo{font-family:"Space Grotesk";font-weight:700;font-size:21px;letter-spacing:-.5px}.logo span{color:var(--accent)}
+.links{display:flex;gap:24px;align-items:center;overflow-x:auto;white-space:nowrap;scrollbar-width:none}.links::-webkit-scrollbar{display:none}.links a{font-size:13px;color:#b6c3c2;transition:.25s}.links a:hover,.links a.active{color:#fff}.links .active:after{content:"";display:block;width:100%;height:2px;background:var(--accent);margin-top:7px;border-radius:5px}
+.hero{min-height:calc(100vh - 76px);display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:60px;padding:70px 0 50px;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--accent);font-size:12px;letter-spacing:2.5px;font-weight:700}.eyebrow:before{content:"";width:26px;height:1px;background:var(--accent)}
+h1{font-family:"Space Grotesk";font-size:clamp(48px,7vw,83px);line-height:.97;letter-spacing:-4px;margin:18px 0 12px}h1 span{color:var(--accent)}
+.role{font-size:clamp(21px,3vw,34px);font-weight:600;color:#dce9e7;line-height:1.2}.role b{color:var(--accent2)}
+.intro{color:var(--muted);max-width:660px;line-height:1.8;font-size:15px;margin-top:20px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:12px;border:1px solid transparent;background:var(--accent);color:#0a1116;font-weight:700;font-size:13px;transition:.25s}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(255,184,74,.18)}.btn.secondary{background:transparent;color:#ecf6f3;border-color:var(--line)}
+.identity{display:flex;gap:18px;align-items:center;margin-top:28px}.identity .mark{width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.12);display:grid;place-items:center;color:var(--accent2);font-weight:800}.identity small{display:block;color:#718380;font-size:11px;margin-bottom:4px}.identity strong{font-size:14px}
+.visual{position:relative;min-height:500px;display:grid;place-items:center}.engineering-card{position:relative;width:min(470px,100%);aspect-ratio:1/1.02;border:1px solid rgba(255,255,255,.12);border-radius:28px;background:linear-gradient(145deg,rgba(18,37,49,.86),rgba(6,17,25,.86));box-shadow:0 30px 90px rgba(0,0,0,.36);overflow:hidden}.engineering-card:before{content:"";position:absolute;inset:18px;border:1px dashed rgba(99,214,198,.18);border-radius:20px}
+.grid{position:absolute;inset:0;opacity:.28;background-image:linear-gradient(rgba(99,214,198,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(99,214,198,.09) 1px,transparent 1px);background-size:30px 30px}
+.blueprint{position:absolute;inset:50px 45px;display:grid;place-items:center}.building{position:relative;width:250px;height:250px}.tower{position:absolute;left:78px;top:30px;width:94px;height:182px;border:2px solid var(--accent2);background:rgba(99,214,198,.04);transform:skewY(-4deg)}.tower:before,.tower:after{content:"";position:absolute;left:11px;right:11px;height:1px;background:rgba(99,214,198,.45)}.tower:before{top:56px;box-shadow:0 42px rgba(99,214,198,.45),0 84px rgba(99,214,198,.45),0 126px rgba(99,214,198,.45)}.tower:after{top:0;bottom:0;left:42px;right:auto;width:1px;height:auto;background:rgba(99,214,198,.28);box-shadow:39px 0 rgba(99,214,198,.28)}
+.roof{position:absolute;left:67px;top:13px;width:116px;height:28px;border:2px solid var(--accent);transform:skewX(-27deg);background:rgba(255,184,74,.03)}.base{position:absolute;left:48px;bottom:23px;width:154px;height:20px;border:2px solid var(--accent)}
+.beam{position:absolute;background:var(--accent);height:2px;transform-origin:left center;opacity:.9}.beam.one{left:15px;top:228px;width:214px;transform:rotate(-9deg)}.beam.two{left:23px;top:84px;width:65px;transform:rotate(-29deg)}.beam.three{right:7px;top:101px;width:58px;transform:rotate(43deg)}
+.dimension{position:absolute;color:#86a7a1;font:10px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.6px}.d1{left:35px;top:74px}.d2{right:28px;bottom:68px}.d3{left:62px;bottom:18px}.label{position:absolute;left:26px;bottom:22px;padding:9px 11px;border-radius:10px;background:rgba(4,13,18,.72);border:1px solid var(--line);font:11px ui-monospace,monospace;color:#abc0bc}
+.marker{position:absolute;width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 8px rgba(255,184,74,.08),0 0 28px rgba(255,184,74,.35)}.m1{top:19%;left:16%;animation:pulse 2.2s infinite}.m2{top:31%;right:13%;animation:pulse 2.2s .8s infinite}.m3{bottom:18%;left:20%;animation:pulse 2.2s 1.4s infinite}
+.float-card{position:absolute;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:rgba(10,23,31,.86);box-shadow:0 18px 40px rgba(0,0,0,.24);backdrop-filter:blur(10px);font-size:11px}.float-card strong{display:block;color:var(--accent2);font-size:12px;margin-bottom:3px}.fc1{right:-12px;top:13%;animation:float 4s ease-in-out infinite}.fc2{left:-18px;bottom:15%;animation:float 4s .9s ease-in-out infinite}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding-bottom:50px}.stat{padding:22px;border:1px solid var(--line);background:rgba(255,255,255,.025);border-radius:16px}.stat b{font-family:"Space Grotesk";font-size:27px;color:#fff;display:block}.stat span{display:block;color:#7f908d;font-size:11px;margin-top:6px;text-transform:uppercase;letter-spacing:1px}
+@keyframes float{50%{transform:translateY(-8px)}}@keyframes pulse{50%{transform:scale(1.35);opacity:.65}}
+@media(max-width:900px){nav{height:auto;min-height:76px;flex-direction:column;align-items:flex-start;justify-content:center;gap:14px;padding:14px 0}.links{width:100%;gap:20px;padding-bottom:3px}.links a{flex:0 0 auto}.hero{grid-template-columns:1fr;gap:30px;padding-top:60px}.visual{min-height:430px}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.container{width:min(100% - 28px,var(--max))}h1{letter-spacing:-3px}.intro{font-size:14px}.engineering-card{border-radius:22px}.blueprint{transform:scale(.78)}.fc1{right:2px}.fc2{left:2px}.stats{grid-template-columns:1fr 1fr;gap:9px}.stat{padding:16px}}
+</style>
+</head>
+<body>
+<header><nav class="container">
+<a class="logo" href="index.html">Rishav<span>World</span></a>
+<div class="links">
+<a class="active" href="index.html">Home</a><a href="about.html">About</a><a href="education.html">Education</a><a href="projects.html">Projects</a><a href="achievements.html">Achievements</a><a href="contact.html">Contact</a>
+</div></nav></header>
+<main>
+<section class="hero container">
+<div class="hero-text">
+<p class="eyebrow">CIVIL ENGINEERING • STUDENT PORTFOLIO</p>
+<h1>Hi, I'm <span>Rishav</span>.</h1>
+<p class="role">Diploma <b>Civil Engineering</b> Student</p>
+<p class="intro">Welcome to my digital workspace. I’m Rishav Raj, a civil engineering student building practical skills in design, drafting and the fundamentals of modern construction. This portfolio captures my education, projects, learning journey and future goals.</p>
+<div class="actions"><a class="btn" href="about.html">Explore My Profile ↗</a><a class="btn secondary" href="projects.html">View Projects</a></div>
+<div class="identity"><div class="mark">RR</div><div><small>ACADEMIC BASE</small><strong>Government Polytechnic Munger</strong></div></div>
+</div>
+<div class="visual" aria-label="Animated civil engineering blueprint illustration">
+<div class="engineering-card">
+<div class="grid"></div><span class="marker m1"></span><span class="marker m2"></span><span class="marker m3"></span>
+<div class="blueprint"><div class="building"><div class="roof"></div><div class="tower"></div><div class="base"></div><i class="beam one"></i><i class="beam two"></i><i class="beam three"></i></div></div>
+<span class="dimension d1">ELEVATION / 01</span><span class="dimension d2">R = 08.50 m</span><span class="dimension d3">STRUCTURAL GRID A—B</span><span class="label">SITE_PLAN // RR-2026</span>
+<div class="float-card fc1"><strong>AUTO CAD</strong>Drafting &amp; Design</div>
+<div class="float-card fc2"><strong>BUILD • DESIGN • LEARN</strong>Future Civil Engineer</div>
+</div></div>
+</section>
+<section class="stats container">
+<div class="stat"><b>01</b><span>Engineering Focus</span></div><div class="stat"><b>Diploma</b><span>Current Program</span></div><div class="stat"><b>Munger</b><span>College Location</span></div><div class="stat"><b>2026</b><span>Portfolio Edition</span></div>
+</section>
+</main>
+<footer class="container" style="padding:0 0 35px;color:#667673;font-size:11px;">© 2026 Rishav World · Civil Engineering Student Portfolio</footer>
+</body></html>
